@@ -129,7 +129,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORSHEADERS
-CORS_ALLOW_ALL_ORIGINS: True
+CORS_ALLOW_ALL_ORIGINS = True
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -140,6 +140,6 @@ REST_FRAMEWORK = {
 AUTH_USER_MODEL = 'users.UsersModel'
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(days=10),  # Duración del token de acceso
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=20),  # Duración del token de refresco
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),  # Duración del token de acceso
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=5),  # Duración del token de refresco
 }
