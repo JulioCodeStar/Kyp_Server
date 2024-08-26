@@ -25,7 +25,7 @@ class Pacientes(models.Model):
     vendedor        = models.CharField(max_length=255, null=False, blank=False)
     
     created_at      = models.DateTimeField(auto_now_add=True)
-    updated_at      = models.DateField(auto_now=True)
+    updated_at      = models.DateTimeField(auto_now=True)
     
     class Meta:
         db_table = "kyp_pacientes"

@@ -141,6 +141,6 @@ REST_FRAMEWORK = {
 AUTH_USER_MODEL = 'users.UsersModel'
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),  # Duración del token de acceso
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=5),  # Duración del token de refresco
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=4),  # Duración del token de acceso
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=8),  # Duración del token de refresco
 }
