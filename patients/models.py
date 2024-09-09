@@ -2,13 +2,13 @@ from django.db import models
 
 # Create your models here.
 class Pacientes(models.Model):
-    id_paciente     = models.CharField(max_length=10, null=False, blank=False)
+    id_paciente     = models.CharField(max_length=10, null=True, blank=True)
     dni             = models.IntegerField(max_length=20, null=False)
     nombres         = models.CharField(max_length=200, null=False, blank=False)
     apellidos       = models.CharField(max_length=200, null=False, blank=False)
     genero          = models.CharField(max_length=50, null=False, blank=False)
     celular         = models.CharField(max_length=20, null=False, blank=False)
-    otro_contact    = models.CharField(max_length=20, null=False, blank=False)
+    otro_contact    = models.CharField(max_length=20, null=True, blank=True)
     direccion       = models.CharField(max_length=255, null=False, blank=False)
     locacion        = models.CharField(max_length=100, null=False, blank=False)
     edad            = models.IntegerField(max_length=3, null=False)
